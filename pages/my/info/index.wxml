@@ -1,0 +1,6 @@
+<!--pages/my/info/index.wxml-->
+<view class="page">
+  <image src="/images/Group 246@3x.png" class="bg"/>
+  <input type="text" placeholder="请输入您的真实姓名" placeholder-class="phcolor"/>
+  <button bind:tap="confirm">确认信息</button>
+</view>

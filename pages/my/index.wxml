@@ -1,0 +1,16 @@
+<!--pages/my/index.wxml-->
+<view class="page">
+  <navigationBar title="我的"></navigationBar>
+  <view class="box">
+    <view class="left">
+      <view class="name">学员姓名：黄三</view>
+      <view>学员编号：202130440736</view>
+    </view>
+    <view class="right" bind:tap="revise">去修改></view>
+  </view>
+  <view class="main">
+    <view class="tabBar">
+      <view class="tab {{tabIndex === index ? 'active' : ''}}" wx:for="{{tab}}" wx:key="index" bind:tap="clickTab" data-i="{{index}}">{{item}}</view>
+    </view>
+  </view>
+</view>

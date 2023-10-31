@@ -1,0 +1,25 @@
+<!--pages/homework/index.wxml-->
+<view class="page">
+  <navigationBar title="作业"></navigationBar>
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
+  <view class="list" wx:if="{{currentTab === 0}}">
+    <view class="item" wx:for="{{notComplete}}" wx:key="index" bind:tap="toNotComplete">
+      <view class="left">
+        <view class="title">{{item.title}}</view>
+        <view class="time">发布时间:{{item.time}}</view>
+      </view>
+      <view class="right">去完成></view>
+    </view>
+  </view>
+  <view class="list" wx:if="{{currentTab === 1}}">
+    <view class="item" wx:for="{{complete}}" wx:key="index" data-i="{{index}}" bind:tap="toCompleted">
+      <view class="left">
+        <view class="title">{{item.title}}</view>
+        <view class="time">发布时间:{{item.time}}</view>
+      </view>
+      <view class="right score" style="{{item.score === undefined ? 'color: rgba(48, 50, 63, 0.51)' : ''}}">{{item.score === undefined ? '未打分' : item.score + '分'}}</view>
+    </view>
+  </view>
+</view>

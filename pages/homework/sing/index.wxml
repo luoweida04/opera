@@ -1,0 +1,12 @@
+<!--pages/homework/sing/index.wxml-->
+<view class="page">
+  <navigationBar title="学习"></navigationBar>
+  <view class="item" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="playAudio" class="item {{playingIndex === index ? 'active' : ''}}">
+    <view class="title">{{item}}</view>
+    <view class="icon"></view>
+  </view>
+  <view class="bottom">
+    <button bind:tap="submit">提交作业</button>
+  </view>
+</view>
+

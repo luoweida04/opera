@@ -1,0 +1,17 @@
+<!--pages/study/oneVideo/index.wxml-->
+<view class="page">
+  <navigationBar title="学习"></navigationBar>
+  <view class="video"></view>
+  <view class="title">梁山伯与祝英台</view>
+  <view class="introduction">
+    <view class="intro">
+      <view>简介</view>
+      <view style="color: rgba(0, 0, 0, 0.50); font-size: 12px;" bindtap="contentDetail">展开</view>
+    </view>
+    <view class="content" style="-webkit-line-clamp: {{contentDetailFlag ? 999 : 3}}">相传祝英台是一个又美丽又聪明的姑娘，她不但会挑花绣朵，还 会读书习字。一天，她忽然想到外面求学去，但她又觉得自家究竟是一个女人，居然单身只影地到外面求学，很有些不便，不如化装一个男子的好。于是她就穿上男人的服装，离开家乡到很远的地方去了。 她到了那个地方，拜过“圣人”和老先生，便和那些同学厮见了。这些同学的当中，有一个名叫梁山伯的，在祝英台的眼...</view>
+  </view>
+  <view class="bottom">
+    <view class="btn go" bindtap="sing">去跟唱</view>
+    <view class="btn test" bindtap="test">去测试</view>
+  </view>
+</view>

@@ -1,0 +1,36 @@
+/* pages/my/info/index.wxss */
+.bg {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+input {
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 550rpx;
+  transform: translateX(-50%);
+  width: 80vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  background-color: #fff;
+  color: #DF7575;
+  padding-left: 40rpx;
+}
+.phcolor {
+  color: #DF7575;
+}
+button {
+  position: absolute;
+  width: 80vw;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  background-color: #FFA14A;
+  color: #fff;
+  text-align: center;
+  left: 50%;
+  top: 680rpx;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/my/info/index",
+    "pages/index/index",
+    "pages/homework/index",
+    "pages/my/index",
+    "pages/practice/index",
+    "pages/study/index",
+    "pages/study/oneVideo/index",
+    "pages/study/sing/index",
+    "pages/study/goTest/index",
+    "pages/practice/uploadScore/index",
+    "pages/homework/notComplete/index",
+    "pages/homework/completed/index",
+    "pages/homework/sing/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#C0110C",
+    "navigationStyle": "custom",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#B90A05",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "测试",
+        "iconPath": "images/Group 296@3x.png",
+        "selectedIconPath": "images/1.png"
+      },
+      {
+        "pagePath": "pages/practice/index",
+        "text": "练声",
+        "iconPath": "images/Group 297@3x.png",
+        "selectedIconPath": "images/2.png"
+      },
+      {
+        "pagePath": "pages/study/index",
+        "text": "学习",
+        "iconPath": "images/Group 298@3x.png",
+        "selectedIconPath": "images/3.png"
+      },
+      {
+        "pagePath": "pages/homework/index",
+        "text": "作业",
+        "iconPath": "images/Group 299@3x.png",
+        "selectedIconPath": "images/4.png"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "text": "我的",
+        "iconPath": "images/Group 301@3x.png",
+        "selectedIconPath": "images/5.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

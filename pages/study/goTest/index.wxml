@@ -1,0 +1,37 @@
+<!--pages/study/goTest/index.wxml-->
+<view class="page">
+  <navigationBar title="学习"></navigationBar>
+  <view wx:if="{{!isFinish}}">
+    <view class="item" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="select" class="item {{selectedIndex === index ? 'active' : ''}}">
+      <view class="title">{{item.title}}</view>
+      <view class="btns">
+        <view class="left">
+          <button class="origin" data-index="{{index}}" bind:tap="playOrigin">播放原声</button>
+          <button class="{{item.recorded ? 'active' : 'notActive'}}" data-flag="{{item.recorded}}" bind:tap="playAudio">{{item.recorded ? '播放录音' : '未录音'}}</button>
+        </view>
+        <button class="record" bind:tap="record">录制</button>
+      </view>
+    </view>
+    <view class="bottom">
+      <button class="finish" bind:tap="finish">结束测试</button>
+    </view>
+  </view>
+  <view wx:if="{{isFinish}}">
+    <view class="top">
+      <image src="/images/Group 294@3x.png" mode="widthFix" />
+      <text class="title">总成绩 :</text>
+      <view class="score">98<text class="unit">分</text></view>
+    </view>
+    <view class="finishItem" wx:for="{{finishList}}" wx:key="index">
+      <view class="left">
+        <view class="title">{{item.title}}</view>
+        <button>播放录音</button>
+      </view>
+      <view class="score">{{item.score}}</view>
+    </view>
+    <view class="bottom">
+      <button class="btn again" bind:tap="again">再测一次</button>
+      <button class="btn upload" bind:tap="upload">上传成绩</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,154 @@
+/**index.wxss**/
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #FAFAFA;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding-bottom: 20rpx;
+  padding-top: 10rpx;
+}
+
+.navbar .item {
+  position: relative;
+  text-align: center;
+  line-height: 60rpx;
+}
+
+.navbar .item.active {
+  color: rgba(212, 47, 47, 1);
+}
+
+.navbar .item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: rgba(212, 47, 47, 1);
+}
+
+.tab {
+  width: 100%;
+}
+
+.tab .head {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* margin-top: 20rpx; */
+}
+
+.tab .head .bigImg {
+  width: 100%;
+  height: 450rpx;
+  background-color: #ccc;
+}
+
+.tab .head .songWord {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: "PingFang SC-Semibold";
+  font-weight: bold;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.40);
+}
+
+.tab .play {
+  position: relative;
+  width: 100%;
+  margin-top: 50rpx;
+}
+.tab .play .imgBox {
+  position: relative;
+  width: 300rpx;
+  height: 300rpx;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 4px 4px 16px 2px rgba(212, 47, 47, 0.05);
+}
+.tab .play .imgBox image {
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.tab .play .text {
+  margin-top: 30rpx;
+  font-size: 14px;
+  color: rgba(48, 50, 63, 0.75);
+  text-align: center;
+}
+.tab .bottom .play {
+  position: fixed;
+  bottom: 50rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 80rpx;
+  border-radius: 40rpx;
+  color: #fff;
+  background: linear-gradient(to right, rgba(192, 17, 12, 1), rgba(235, 74, 64, 1));
+}
+.tab .result {
+  position: relative;
+  width: 100%;
+  margin-top: 150rpx;
+}
+.tab .result image {
+  width: 90%;
+  margin-left: 5%;
+}
+.tab .result .score {
+  position: absolute;
+  left: 320rpx;
+  top: 50rpx;
+  font-size: 60px;
+  color: rgba(248, 92, 87, 1);
+}
+.tab .result .comment {
+  position: absolute;
+  left: 320rpx;
+  top: 200rpx;
+  font-size: 22px;
+  color: rgba(248, 92, 87, 1);
+}
+.tab .bottom_result {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-left: 5%;
+  bottom: 50rpx;
+}
+.tab .bottom_result .btn {
+  box-sizing: border-box;
+  width: 310rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+}
+.tab .bottom_result .again {
+  color: rgba(192, 17, 12, 1);
+  border: 1px solid rgba(192, 17, 12, 1);
+}
+.tab .bottom_result .replace {
+  color: #fff;
+  background: linear-gradient(to right, rgba(192, 17, 12, 1), rgba(235, 74, 64, 1));
+}

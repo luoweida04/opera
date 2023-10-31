@@ -1,0 +1,5 @@
+<!--components/navigationBar/index.wxml-->
+<view class="bar">
+  <view class="title">{{title}}</view>
+  <view class="back" bind:tap="back">{{'<'}}</view>
+</view>

@@ -1,0 +1,43 @@
+/* pages/practice/uploadScore/index.wxss */
+.page {
+  background-color: #fff;
+}
+.item {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 100rpx;
+  padding: 30rpx;
+  border-bottom: 1px solid #ccc;
+}
+.item.active {
+  color: rgba(212, 47, 47, 1);
+  background-color: rgba(212, 47, 47, 0.15);
+}
+.item .title {
+  line-height: 40rpx;
+}
+.score {
+  width: 40rpx;
+  height: 40rpx;
+  color: #F57329;
+  margin-right: 20rpx;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 170rpx;
+  background-color: #fff;
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.04);
+}
+.bottom button {
+  width: 80%;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 35rpx;
+  margin: auto;
+  margin-top: 40rpx;
+  color: #fff;
+  background: linear-gradient(to right, rgba(192, 17, 12, 1), rgba(235, 74, 64, 1));
+}

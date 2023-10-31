@@ -1,0 +1,11 @@
+<!--pages/practice/uploadScore/index.wxml-->
+<view class="page">
+  <navigationBar title="练声"></navigationBar>
+  <view class="item" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="playAudio" class="item {{playingIndex === index ? 'active' : ''}}">
+    <view class="title">{{item.title}}</view>
+    <view class="score">{{item.score}}</view>
+  </view>
+  <view class="bottom">
+    <button bind:tap="upload">上传成绩</button>
+  </view>
+</view>

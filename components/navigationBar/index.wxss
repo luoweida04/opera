@@ -1,0 +1,19 @@
+/* components/navigationBar/index.wxss */
+.bar {
+  position: relative;
+  width: 100vw;
+  height: 160rpx;
+  background: linear-gradient(to right, rgba(192, 17, 12, 1), rgba(235, 74, 64, 1));
+}
+.title {
+  position: absolute;
+  color: #fff;
+  bottom: 20rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.back {
+  position: absolute;
+  left: 30rpx;
+  bottom: 20rpx;
+}

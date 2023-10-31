@@ -1,0 +1,49 @@
+/* pages/my/index.wxss */
+.page {
+  min-height: 100vh;
+  background-color: rgba(250, 250, 250, 1);
+}
+.box {
+  display: flex;
+  justify-content: space-between;
+  height: 140rpx;
+  background-color: #fff;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin: 30rpx;
+  padding: 40rpx;
+}
+.left .name {
+  height: 70rpx;
+  margin-bottom: 20rpx;
+}
+.right {
+  color: #D42F2F;
+  margin-top: 40rpx;
+}
+.main {
+  height: 900rpx;
+  background-color: #fff;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin: 30rpx;
+}
+.main .tabBar {
+  display: flex;
+}
+.main .tabBar .tab {
+  position: relative;
+  width: 33.33%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.main .tabBar .active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #D42F2F;
+  left: 0;
+  bottom: 0;
+}

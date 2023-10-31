@@ -1,0 +1,35 @@
+<!--index.wxml-->
+<view class="page">
+  <navigationBar title="测试"></navigationBar>
+  <view class="navbar">
+    <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
+  <view class="tab">
+    <view class="head">
+      <image src="" mode="widthFix" class="bigImg" />
+      <view class="songWord">歌词歌词歌词</view>
+    </view>
+    <view class="main" wx:if="{{!complete}}">
+      <view class="play">
+        <view class="imgBox">
+          <image src="{{isRecording ? '/images/Group 303@3x.png' : '/images/Group 295@3x.png'}}" mode="widthFix" bindtap="recordOrStop" />
+        </view>
+        <view class="text" style="color: {{isRecording ? 'rgba(236, 101, 101, 1)' : 'rgba(48, 50, 63, 0.75)'}}">{{isRecording ? '点击上方按钮停止录制' : '点击上方按钮开始录制'}}</view>
+      </view>
+      <view class="bottom">
+        <button class="play">播放</button>
+      </view>
+    </view>
+    <view class="main" wx:if="{{complete}}">
+      <view class="result">
+        <image src="/images/Frame 32@3x.png" mode="widthFix"/>
+        <view class="score">{{score}}<text style="font-size: 22px;">分</text> </view>
+        <view class="comment">{{comment}}</view>
+      </view>
+      <view class="bottom_result">
+        <button class="btn again" bindtap="again">再试一次</button>
+        <button class="btn replace" bindtap="replace">换一换</button>
+      </view>
+    </view>
+  </view>
+</view>

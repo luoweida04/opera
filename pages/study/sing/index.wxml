@@ -1,0 +1,11 @@
+<!--pages/study/sing/index.wxml-->
+<view class="page">
+  <navigationBar title="学习"></navigationBar>
+  <view class="item" wx:for="{{list}}" wx:key="index" data-index="{{index}}" bindtap="playAudio" class="item {{playingIndex === index ? 'active' : ''}}">
+    <view class="title">{{item}}</view>
+    <image src="{{playingIndex === index ? '/images/volume2.png' : '/images/volume1.png'}}" mode="widthFix" class="icon"/>
+  </view>
+  <view class="bottom">
+    <button bind:tap="test">去测试</button>
+  </view>
+</view>

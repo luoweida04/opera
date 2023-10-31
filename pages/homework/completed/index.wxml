@@ -1,0 +1,43 @@
+<!--pages/homework/completed/index.wxml-->
+<view class="page">
+  <navigationBar title="作业"></navigationBar>
+  <image src="" mode="widthFix" class="headImg" />
+  <view class="navBar">
+    <view class="{{navIndex === 0 ? 'active' : ''}}" data-i="{{0}}" bind:tap="changeNav">分数</view>
+    <view class="{{navIndex === 1 ? 'active' : ''}}" data-i="{{1}}" bind:tap="changeNav">简介</view>
+  </view>
+  <view class="scoreList" wx:if="{{navIndex === 0}}">
+    <view wx:if="{{!haveScore}}">
+      <image src="/images/Frame@3x.png" mode="widthFix" />
+      <text>暂未评分</text>
+    </view>
+    <view wx:if="{{haveScore}}" class="item" wx:for="{{scoreList}}" wx:key="index">
+      <view class="left">
+        <view class="teacher">{{item.teacher}}</view>
+        <view class="comment">{{item.comment}}</view>
+      </view>
+      <view class="score">{{item.score}}</view>
+    </view>
+  </view>
+  <view class="introduction" wx:if="{{navIndex === 1}}">
+    <view class="box">
+    <view class="title">作业介绍</view>
+    <view class="content">相传祝英台是一个又美丽又聪明的姑娘，她不但会挑花绣朵，还 会读书习字。一天，她忽然想到外面求学去，但她又觉得自家究竟是一个女人，居然单身只影地到外面求学，很有些不便，不如化装一个男子的好。于是她就穿上男人的服装，离开家乡到很远的地方去了。 她到了那个地方，拜过“圣人”和老先生，便和那些同学厮见了。这些同学的当中，有一个名叫梁山伯的，在祝英台的眼...</view>
+  </view>
+  <view class="box">
+    <view class="title">作业要求</view>
+    <view class="content">相传祝英台是一个又美丽又聪明的姑娘，她不但会挑花绣朵，还 会读书习字。一天，她忽然想到外面求学去，但她又觉得自家究竟是一个女人，居然单身只影地到外面求学，很有些不便，不如化装一个男子的好。于是她就穿上男人的服装，离开家乡到很远的地方去了。 她到了那个地方，拜过“圣人”和老先生，便和那些同学厮见了。这些同学的当中，有一个名叫梁山伯的，在祝英台的眼...</view>
+  </view>
+  </view>
+  <view class="bottom" wx:if="{{!haveScore}}">
+    <view class="two">
+      <button class="btn look" bind:tap="look">查看提交</button>
+      <button class="btn resubmit" bind:tap="resubmit">重新提交</button>
+    </view>
+    <button class="sing" bind:tap="sing">去跟唱</button>
+  </view>
+  <view class="bottom2" wx:if="{{haveScore}}">
+    <button class="btn sing" bind:tap="sing">去跟唱</button>
+      <button class="btn look" bind:tap="look">查看提交</button>
+  </view>
+</view>

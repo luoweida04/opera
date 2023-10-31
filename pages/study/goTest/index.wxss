@@ -1,0 +1,170 @@
+/* pages/study/goTest/index.wxss */
+.page {
+  background-color: #fff;
+}
+
+.item {
+  box-sizing: border-box;
+  height: 160rpx;
+  padding: 30rpx;
+  border-bottom: 1px solid #ccc;
+}
+
+.item.active {
+  color: rgba(212, 47, 47, 1);
+  background-color: rgba(212, 47, 47, 0.15);
+}
+
+.item .title {
+  line-height: 40rpx;
+}
+
+.item .btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+
+.item .btns .left {
+  display: flex;
+}
+
+.item .btns .left button {
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 140rpx;
+  height: 50rpx;
+  line-height: 40rpx;
+  padding: 5rpx;
+  margin-right: 20rpx;
+}
+
+.item .btns .left .origin {
+  background-color: #FFD1A6;
+  color: #F57329;
+  border: 1px solid #FF8540;
+}
+
+.item .btns .left .active {
+  background-color: #C7EDBD;
+  color: #399331;
+  border: 1px solid #399331;
+}
+
+.item .btns .left .notActive {
+  color: rgba(48, 50, 63, 0.51);
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(157, 159, 169, 1);
+}
+
+.item .btns .record {
+  width: 140rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 14px;
+  color: rgba(192, 17, 12, 1);
+  border-radius: 25rpx;
+  border: 1px solid rgba(195, 2, 2, 1);
+  padding: 0;
+  margin-right: 0;
+  background-color: #fff;
+}
+.top {
+  position: relative;
+  width: 100vw;
+}
+.top image {
+  width: 100%;
+}
+.top .title {
+  position: absolute;
+  font-size: 22px;
+  left: 30rpx;
+  top: 70rpx;
+  color: #B90A05;
+}
+.top .score {
+  position: absolute;
+  font-size: 98px;
+  left: 250rpx;
+  top: 140rpx;
+  color: #C0110C;
+}
+.top .score .unit {
+  font-size: 22px;
+  color: #C0110C;
+}
+.finishItem {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 170rpx;
+  padding: 30rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid #ccc;
+}
+.finishItem .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.finishItem .left button {
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 140rpx;
+  height: 50rpx;
+  line-height: 40rpx;
+  padding: 5rpx;
+  background-color: #F4D2D2;
+  color: #F85C57;
+  border: 1px solid #F85C57;
+  margin-left: 0;
+}
+.finishItem .score {
+  line-height: 130rpx;
+  font-size: 20px;
+  color: #F57329;
+  margin-right: 30rpx;
+}
+.bottom {
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  width: 100vw;
+  height: 170rpx;
+  background-color: #fff;
+  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.04);
+  padding: 0 30rpx;
+}
+
+.bottom .finish {
+  width: 80%;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 35rpx;
+  margin: auto;
+  margin-top: 40rpx;
+  color: #fff;
+  background: linear-gradient(to right, rgba(192, 17, 12, 1), rgba(235, 74, 64, 1));
+}
+
+.bottom .btn {
+  width: 45%;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 35rpx;
+  margin: auto;
+  margin-top: 40rpx;
+}
+
+.bottom .again {
+  color: #C0110C;
+  background-color: #fff;
+  border: 1px solid #C0110C;
+}
+.bottom .upload {
+  color: #fff;
+  background: linear-gradient(to right, rgba(192, 17, 12, 1), rgba(235, 74, 64, 1));
+}
